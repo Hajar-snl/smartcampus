@@ -1,5 +1,6 @@
 public class LoginService {
     public boolean login(String user, String pwd) {
-        return false;
+        return user != null && !user.isEmpty()
+            && pwd != null && !pwd.isEmpty();
     }
 }
